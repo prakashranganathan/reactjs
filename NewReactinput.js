@@ -5,7 +5,7 @@ function Singleinput() {
     const [isvalid, setIsvalid] = useState(false);
 
     const handelInput = () => {
-        let id = ("_xz01" + inputData.slice(0, 3) + inputData.length)
+        let id = ("_xz01" + inputData.slice(0, 2) + inputData.length)
         let storeData = [...dataBase]
         let getValues = { Id: id, Text: inputData };
         storeData.push(getValues)
